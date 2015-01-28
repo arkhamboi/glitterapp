@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Glitter</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><%= link_to "home", root_path =%></li>
+  <li role="presentation"><%= link_to "about", main_about_path %></li>
+  <li role="presentation"><%= link_to "faq", main_faq_path %></li>
+  <li role="presentation"><%= link_to "contact", main_contact_path %></li>
+</ul>
+<%= yield %>
+
+</body>
+</html>
